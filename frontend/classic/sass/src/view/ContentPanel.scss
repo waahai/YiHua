@@ -1,0 +1,13 @@
+#content-panel-body {
+    background-image: url(images/square.gif);
+}
+
+#content-panel-innerCt {
+    padding: 10px;
+    background-color: #fff;
+    vertical-align: top;
+    > * {
+        margin: auto;
+    }
+}
+

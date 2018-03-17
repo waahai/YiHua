@@ -1,0 +1,48 @@
+.icon-red {
+	color: $red-icon-color;
+}
+
+.icon-green {
+	color: $green-icon-color;
+}
+
+.icon-yellow {
+	color: $yellow-icon-color;
+}
+
+.multiline-text .x-grid-cell-inner {
+	white-space: normal!important;
+}
+
+.broadcast-editor .x-html-editor-input {
+	border: 1px solid #d0d0d0;
+}
+
+.label {
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+}
+
+.label-warning {
+    background-color: $yellow-icon-color;
+}
+
+.label-danger {
+    background-color: $red-icon-color;
+}
+
+.label-success {
+    background-color: $green-icon-color;
+}
+
+.label-default {
+    background-color: #d0d0d0;
+}

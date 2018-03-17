@@ -1,0 +1,27 @@
+{
+  "name": "Yihua Architecture Management System",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.12.2",
+    "compression": "^1.4.3",
+    "errorhandler": "^1.3.5",
+    "express": "^4.12.3",
+    "express-session": "^1.11.1",
+    "extdirect": "^2.0.1",
+    "method-override": "^2.3.2",
+    "moment": "^2.11.2",
+    "morgan": "^1.5.2",
+    "multer": "^0.1.8",
+    "mysql": "^2.6.1",
+    "respawn": "^2.3.0",
+    "sequelize": "^3.16.0",
+    "serve-favicon": "^2.2.0",
+    "serve-index": "^1.6.3",
+    "serve-static": "^1.9.2",
+    "underscore": "^1.8.3"
+  }
+}

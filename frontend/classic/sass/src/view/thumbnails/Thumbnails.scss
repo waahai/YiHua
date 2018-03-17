@@ -1,0 +1,70 @@
+$yihua-thumbnail-background-color: #888;
+$yihua-thumbnail-color: #fff;
+
+@if $theme-name == 'theme-crisp' or $theme-name == 'theme-crisp-touch' {
+    $yihua-thumbnail-background-color: #2a3f5d;
+} @else if $theme-name == 'theme-neptune' or $theme-name == 'theme-neptune-touch' {
+    $yihua-thumbnail-background-color: #3892d3;
+    $yihua-thumbnail-color: #b8d8f0;
+} @else if $theme-name == 'theme-classic' {
+    $yihua-thumbnail-background-color: #275287;
+} @else if $theme-name == 'theme-triton' {
+    $yihua-thumbnail-background-color: darken($base-color, 5%);
+}
+
+$yihua-thumbnail-size: 96px;
+
+.thumbnails {
+    display: table;
+}
+
+.thumbnail-item {
+    float: left;
+    width: $yihua-thumbnail-size + 20;
+    height: $yihua-thumbnail-size + 60;
+    margin-right: 20px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.thumbnail-text {
+    text-align: center;
+}
+
+.thumbnail-icon-wrap {
+    width: $yihua-thumbnail-size;
+    height: $yihua-thumbnail-size;
+    text-align: center;
+    font-size: $yihua-thumbnail-size;
+    line-height: $yihua-thumbnail-size;
+    font-family: Sencha-Examples;
+    margin: 0 auto 8px;
+    position: relative;
+    overflow: hidden;
+    background-color: $yihua-thumbnail-background-color;
+}
+
+.thumbnail-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-size: $yihua-thumbnail-size / 2;
+    line-height: $yihua-thumbnail-size;
+    color: $yihua-thumbnail-color;
+    overflow: hidden;
+}
+
+.x-rtl.thumbnails {
+    .thumbnail-item {
+        direction: ltr;
+        float: right;
+        margin-right: 0;
+        margin-left: 20px;
+    }
+    .thumbnail-text {
+        direction: rtl;
+    }
+}
